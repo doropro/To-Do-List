@@ -1,7 +1,7 @@
 # To-Do-List
 
 Réalisation d'une To Do Liste.
-Produire min 5 pages
+
 
 ## Date :
 
@@ -32,4 +32,3 @@ Lorsqu'on traite les formulaires il faut, après sanitisation et validation, sto
 Lorsqu'on affiche les tâches on va les rechercher dans la base de données.
 
 lien github page : <https://doropro.github.io/To-Do-List/>
-## Aperçu du site :
