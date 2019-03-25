@@ -13,4 +13,4 @@
 <body class="bg-light">
 
 
-<main role="main" class="container-fluid mt-5">
+<main role="main" class="container mt-5">

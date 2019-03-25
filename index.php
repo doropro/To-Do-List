@@ -1,8 +1,15 @@
 <?php require 'header.php';
 
 //////////////////////////////CONNECTION BDD
-$bdd = new PDO('mysql:host=localhost;dbname=becode;charset=utf8', 'phpmyadmin','user');
+try
 
+{
+$bdd = new PDO('mysql:host=localhost;dbname=Todolist;charset=utf8', 'phpmyadmin','user');
+}
+catch(Exception $bdd)
+{
+  die('Erreur : '.$bdd->getMessage());
+}
 ///////////////////////////////AJOUT DANS TABLE
 if(!empty($_POST['Taches'])) {
 $newTache = $_POST["Taches"];
@@ -36,8 +43,10 @@ $archive->execute(array(
 
 ////////////////////////////////////CODE VISIBLE
 ?>
-<div class="container border border-dark" id="cont">
-
+<div class="container bordure border border-dark offset-3 col-md-6 offset-3  p-0 mb-5">
+  <h1 class="text-center mt-5">TO DO LIST</h1>
+<div class="row">
+  <div class="offset-1 col-md-10 offset-1 border border-primary mt-5 p-5">
   <h2 class="mb-5 text-center">A Faire</h2>
     <form class="mb-5" action="" method="post">
       <?php
@@ -50,7 +59,11 @@ $archive->execute(array(
       <button type="submit" class="btn btn-primary mt-5 text-right" value="envoyer" name="boutonRec[]">Archiver</button>
     </form>
     <?php $resultat->closeCursor();//termine le traitement de la demande ?>
+</div>
+</div>
 
+<div class="row">
+  <div class="offset-1 col-md-10 offset-1 border border-primary mt-5 p-5">
   <h2 class="text-center">Archives</h2>
 
     <ul>
@@ -65,7 +78,11 @@ $archive->execute(array(
       }
       ?>
     </ul>
+</div>
+</div>
 
+<div class="row">
+  <div class="offset-1 col-md-10 offset-1 border border-primary mt-5 mb-5 p-5">
 <h2 class=" text-center mb-5">Ajouter une nouvelle tâche</h2>
 
 <form class="mb-5" action="index.php" method="post">
@@ -74,6 +91,7 @@ $archive->execute(array(
   <button type="submit" class="btn btn-primary mt-5 pull-right" name="boutonAjout">Ajouter</button>
 </form>
 </div>
-
+</div>
+</div>
 <?php $resultat->closeCursor();?>
 <?php require 'footer.php';?>
