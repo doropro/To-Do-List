@@ -1,6 +1,6 @@
 # To-Do-List
 
-Réalisation d'une To Do Liste.
+Réalisation d'une To Do List.
 
 
 ## Date :
@@ -31,4 +31,4 @@ Crée un outil de gestion de tâches basique et fiable. L'interface est subdivis
 Lorsqu'on traite les formulaires il faut, après sanitisation et validation, stocker les tâches dans une table "todos" d'une base de données "todolist".
 Lorsqu'on affiche les tâches on va les rechercher dans la base de données.
 
-lien github page : <https://doropro.github.io/To-Do-List/>
+lien demo site : https://todolistdoro.000webhostapp.com/
