@@ -16,7 +16,8 @@ Effectué la semaine du 18 mars 2019 en tant que stagiaire chez BeCode
 
 ## Progression :
 
-Terminé
+Fonctionnalitées : terminé
+Design : à travailler
 
 ## Consignes :
 
