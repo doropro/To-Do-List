@@ -32,4 +32,4 @@ Crée un outil de gestion de tâches basique et fiable. L'interface est subdivis
 Lorsqu'on traite les formulaires il faut, après sanitisation et validation, stocker les tâches dans une table "todos" d'une base de données "todolist".
 Lorsqu'on affiche les tâches on va les rechercher dans la base de données.
 
-lien demo site : https://todolistdoro.000webhostapp.com/
+lien demo site : https://todolistbecode2000.000webhostapp.com/index.php
