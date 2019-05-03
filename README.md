@@ -1,13 +1,13 @@
 # To-Do-List
 
-Réalisation d'une To Do List.
+Realization of a to do list.
 
 
 ## Date :
 
-Effectué la semaine du 18 mars 2019 en tant que stagiaire chez BeCode
+Performed the week of March 18, 2019 as a trainee at BeCode.
 
-## Langages utilisés :
+## Technology used :
 
 + PHP/SQL
 + HTML
@@ -17,21 +17,21 @@ Effectué la semaine du 18 mars 2019 en tant que stagiaire chez BeCode
 
 ## Progression :
 
-Fonctionnalitées : terminé
+functionalities : completed
 
-Design : à travailler
+Design : to work
 
-## Consignes :
+## Instructions:
 
-Crée un outil de gestion de tâches basique et fiable. L'interface est subdivisée en deux parties :
+Creates a basic and reliable task management tool. The interface is subdivided into two parts:
 
-+ partie supérieure : la liste des tâches à faire, avec pour chaque tâche,   une checkbox. Lorsqu'une tâche est effectuée, on coche la tâche puis on appuye sur un bouton "Enregistrer" qui rafraichit la liste en barrant la tâche terminée et en la mettant dans la zone "archivée".
++ upper part: the list of tasks to be done, with for each task, a checkbox. When a task is done, we check the task and then press a "Save" button that refreshes the list by blocking the completed task and putting it in the "archived" area.
 
-+ partie inférieure : un petit formulaire permettant d'ajouter une tâche (un champ "textarea" et le bouton "submit").
++ lower part: a small form to add a task (a "textarea" field and the "submit" button).
 
-## Objectif principal :
+## Primary objective :
 
-Lorsqu'on traite les formulaires il faut, après sanitisation et validation, stocker les tâches dans une table "todos" d'une base de données "todolist".
-Lorsqu'on affiche les tâches on va les rechercher dans la base de données.
+When processing the forms, after sanitization and validation, the tasks must be stored in a "todos" table of a "todolist" database.
+When displaying the tasks we will search them in the database.
 
-lien demo site : https://todolistbecode2000.000webhostapp.com/index.php
+link demo site : https://todolistbecode2000.000webhostapp.com/index.php
