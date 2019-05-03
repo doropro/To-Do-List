@@ -22,8 +22,9 @@ function getInser()
   'Taches' => $newTache,
   'etat' => '1'//possible de mettre 1 dans une variable avt comme new tache
   ));
-  }
   return $req;
+  }
+
 }
 
 function getModif()
@@ -36,8 +37,9 @@ function getModif()
   'etat' => '0',
   'ID_Taches' => $_POST['cocher'][$i]
   ));
-  }
   return $modif;
+  }
+
 }
 
 function getAfaire()
@@ -67,10 +69,11 @@ function getDelete()
   $bdd = bddConnect();
   //////////////////////////EFFACE TACHES
   if(isset($_GET['ID_Taches'])){//Si get id tache dans url
-  $resultat = $bdd->prepare('DELETE FROM Todos WHERE ID_Taches=:ID_Taches');
-  $resultat->execute(array(
+  $delete = $bdd->prepare('DELETE FROM Todos WHERE ID_Taches=:ID_Taches');
+  $delete->execute(array(
   'ID_Taches'=> $_GET['ID_Taches']
   ));
+  return $delete;
   }
 }
 
